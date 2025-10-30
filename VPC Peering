@@ -1,0 +1,2 @@
+VPC Peering helps connect multiple VPC's securely using private IP's without going over the public network.
+VPC Peering can be Intra-region (within the same region) and Inter-region (across different AWS regions).Traffic between peered VPC's stays on the AWS Private backbone,ensuring low latency and high security.
