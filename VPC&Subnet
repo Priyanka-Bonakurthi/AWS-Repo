@@ -1,1 +1,10 @@
+******************** Golden Rule of VPC and Subnet ********************
+
+Every subnet you create must have an IP range(CIDR) that fits inside the VPC's CIDR range.
+
+Example : VPC's CIDR range : 10.0.0.0/16
+Subnet's CIDR range: 10.0.0.0/24
+
+so you can choose subnets like 10.0.1.0/24 (or) 10.0.4.0/24 (or) 10.0.3.0/24.Here the first two bits are occupied since we hhave range as 16 and we cannot give subnet range has 10.1.0.0/24 since it is out of VPC's CIDR range.
+
 
