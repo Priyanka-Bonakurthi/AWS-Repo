@@ -2,4 +2,11 @@ This file is all about VPC
 
 VPC - Virtual Private Cloud 
 
-VPC is a virtual private cloud where we can store our data ,application securely.Its basically a private space in the larger network.we can isolate,secure our applications and data from other networks.
+VPC is a virtual networ that we create in cloud where we can store our data and run application securely.It is completey isolated from the other networks.Its basically a private space in the larger network.With this VPC, we can create and manage resources like servers,databases etc.
+
+We can define IP address range to our VPC and create a smaller subnetworks called Subnet.This Subnet help organize resources and control how they communicate with each other.
+
+To allow communication to the internet we have Internet gateway,routetable.These act as entry and exit point for the incoming and outgoing traffic. We can control the flow of  traffic and setup security measures to prevent from unauthorized access.
+
+We can define access rules, setup firewalls and configure security groups to regulate who can access the resources and how they communicate.This is a secure way to isolate resources privately in AWS.
+
