@@ -10,3 +10,29 @@ To allow communication to the internet we have Internet gateway,routetable.These
 
 We can define access rules, setup firewalls and configure security groups to regulate who can access the resources and how they communicate.This is a secure way to isolate resources privately in AWS.
 
+
+*********************** IMPORTANT POINTS TO REMEMBER **************************.
+
+By default when we create a AWS account a VPC is created.Even though a VPC is created by default we need to create a VPC to our own project.
+Default VPC : AWS gives you a default VPC to get stareted quickly,but for production you usually create your own custom VPC with proper subnet design.
+The default VPC includes:
+1) A VPC with pre-defined CIDR range (usaully 172.31.0.0/16)
+2)Public subnets in each AZ's
+3)An Internet gateway 
+4) A main route table with routes to the internet 
+5) A default security group and NACL
+
+####### By default VPC is created in each region  ############
+
+NOTE : we can create a VPC's with same CIDR range in the same region.The problem comes when you try to connect them.
+example - If you ever want VPCA <----> VPCB communication (for example using VPC peering or Transit gateway) the AWS will not allow it because both have overlapping CIDR ranges.
+AWS won't know which 10.0.1.5 belongs to which VPC - It would confuse routing.
+
+
+
+
+
+
+
+
+
