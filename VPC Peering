@@ -1,2 +1,44 @@
+
+VPC PEERING :
+
 VPC Peering helps connect multiple VPC's securely using private IP's without going over the public network.
 VPC Peering can be Intra-region (within the same region) and Inter-region (across different AWS regions).Traffic between peered VPC's stays on the AWS Private backbone,ensuring low latency and high security.
+
+
+
+
+VPC FLOWLOGS :
+
+VPC flowlog is a feature that enables you to capture information about the IP traffic going to and from network interface in your VPC.
+
+VPC flowlogs record network traffic going in and out of our AWS resources.
+
+logs are divided into 3 types:
+1)VPC flowlogs
+2) Subnet level
+3) Instance level
+
+Where can you create Flow Logs?
+
+You can enable Flow Logs at three levels:
+
+| Level                       | Captures traffic for                         | Example Use Case                         |
+| --------------------------- | -------------------------------------------- | ---------------------------------------- |
+| **VPC**                     | Entire VPC (all subnets & ENIs)              | Monitor all traffic in your environment  |
+| **Subnet**                  | A specific subnet                            | Watch only your private or public subnet |
+| **Network Interface (ENI)** | A single resource (EC2, Load Balancer, etc.) | Debug one instance’s connectivity issue  |
+
+
+Where are Flow Logs stored?
+
+You can send the captured logs to:
+
+Amazon CloudWatch Logs – for real-time monitoring and alerts
+Amazon S3 – for long-term storage and analysis
+
+Flow log data is collected outside of the path of your network traffic, and therefore does not affect network throughput or latency. You can create or delete flow logs without any risk of impact to network performance.
+
+
+
+
+PCI DSS certified ( payment card Industry Data security standards)
